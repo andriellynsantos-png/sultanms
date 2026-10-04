@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sultan Palace Hotel – Hospedagem no centro de Paranaguá</title>
+<meta name="description" content="Hotel no centro de Paranaguá, ao lado da prefeitura. Wi-Fi 24h, café da manhã colonial e preço justo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="w">
+    <a class="logo" href="#inicio">Sultan Palace Hotel</a>
+    <nav aria-label="Principal">
+      <a href="#inicio">Início</a><a href="#sobre">Sobre</a><a href="#paranagua">Paranaguá</a><a href="#contato">Contato</a>
+      <a class="btn" href="#reservas">Reservar</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="hero" id="inicio">
+  <svg class="pat" aria-hidden="true"><defs><pattern id="az" width="90" height="90" patternUnits="userSpaceOnUse"><rect width="90" height="90" fill="none" stroke="#6f94bd" stroke-width="1"/><path d="M45 8 L82 45 L45 82 L8 45Z" fill="none" stroke="#6f94bd" stroke-width="1.5"/><circle cx="45" cy="45" r="12" fill="none" stroke="#6f94bd" stroke-width="1.5"/><path d="M45 33v24M33 45h24" stroke="#6f94bd" stroke-width="1.5"/><circle cx="0" cy="0" r="9" fill="none" stroke="#6f94bd"/><circle cx="90" cy="0" r="9" fill="none" stroke="#6f94bd"/><circle cx="0" cy="90" r="9" fill="none" stroke="#6f94bd"/><circle cx="90" cy="90" r="9" fill="none" stroke="#6f94bd"/></pattern></defs><rect width="100%" height="100%" fill="url(#az)"/></svg>
+  <div class="w" style="width:100%">
+    <div class="in">
+      <h1>Hospede-se no coração de Paranaguá</h1>
+      <p>Ao lado da prefeitura, a poucos passos do centro histórico. Conforto, praticidade e preço justo.</p>
+      <a class="btn" href="#reservas">Reservar agora</a>
+    </div>
+    <form class="book" id="reservas" onsubmit="return reservar(event)" aria-label="Consultar reserva">
+      <label>Entrada<input type="date" id="ent" required></label>
+      <label>Saída<input type="date" id="sai" required></label>
+      <label>Hóspedes<select id="hosp"><option>1 hóspede</option><option selected>2 hóspedes</option><option>3 hóspedes</option><option>4 hóspedes</option><option>5 ou mais</option></select></label>
+      <button class="btn" type="submit">Consultar disponibilidade</button>
+    </form>
+  </div>
+</div>
+
+<section class="sobre" id="sobre">
+  <div class="w g">
+    <div>
+      <h2>O Sultan Palace Hotel</h2>
+      <p>Há anos de portas abertas para quem visita ou trabalha em Paranaguá, o Sultan recebe turistas e, principalmente, profissionais que precisam de uma base confortável e bem localizada.</p>
+      <p>Estamos no centro da cidade, ao lado da prefeitura: seus principais serviços e comércios ficam a poucos minutos. Atendimento de qualidade, com um preço justo e acessível.</p>
+      <p class="sig">Conforto, praticidade e preço justo.</p>
+    </div>
+    <div class="photo" role="img" aria-label="Espaço reservado para foto do hotel"><svg aria-hidden="true"><rect width="100%" height="100%" fill="url(#az)"/></svg><small>Foto do hotel (substituir)</small></div>
+  </div>
+</section>
+
+<section class="com">
+  <div class="w">
+    <h2>Tudo o que você precisa na diária</h2>
+    <div class="row">
+      <div class="it"><svg viewBox="0 0 24 24"><path d="M2 9a15 15 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19" r="1"/></svg><h3>Wi-Fi 24 horas</h3><p>Internet banda larga e sem fio, todos os dias, para usar no notebook ou no celular.</p></div>
+      <div class="it"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg><h3>Pagamento facilitado</h3><p>Escolha como pagar: cartão de crédito Visa ou Mastercard, ou faturado no boleto bancário.</p></div>
+      <div class="it"><svg viewBox="0 0 24 24"><path d="M4 11h13v4a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zM17 12h2a2 2 0 0 1 0 4h-2M8 3v4M12 3v4"/></svg><h3>Café da manhã colonial</h3><p>Incluso na diária, com grande variedade de frutas, cereais e massas para começar bem o dia.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="quartos">
+  <div class="w">
+    <div class="head"><h2 style="margin:0">Acomodações</h2><a class="btn ghost" style="color:var(--tile)" href="#contato">Consultar quartos</a></div>
+    <div class="cards">
+      <div class="q"><div class="photo" role="img" aria-label="Espaço reservado para foto do quarto"><small>Foto do quarto (substituir)</small></div><h3>Quarto Standard</h3><p>Descrição do quarto: camas, ar-condicionado, TV e banheiro privativo.</p><a href="#reservas">Reservar</a></div>
+      <div class="q"><div class="photo" role="img" aria-label="Espaço reservado para foto do quarto"><small>Foto do quarto (substituir)</small></div><h3>Quarto Casal</h3><p>Descrição do quarto, com conforto para quem viaja a trabalho ou a passeio.</p><a href="#reservas">Reservar</a></div>
+      <div class="q"><div class="photo" role="img" aria-label="Espaço reservado para foto do quarto"><small>Foto do quarto (substituir)</small></div><h3>Quarto Família</h3><p>Descrição do quarto, com espaço para três ou mais hóspedes.</p><a href="#reservas">Reservar</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="pgua" id="paranagua">
+  <div class="w">
+    <div class="top">
+      <h2>Conheça Paranaguá</h2>
+      <p>A cidade mais antiga do Paraná tem mais de 350 anos de história, casarios de fachadas azulejadas, ladeiras de pedra e igrejas coloniais. De lá saem passeios de barco pela baía e o caminho para a Ilha do Mel. Prove o barreado e o pirão de peixe, e dance o fandango.</p>
+    </div>
+    <div class="list">
+      <article><h3>Aquário Marinho <span>Passeio em família</span></h3><p>23 tanques de água doce e salgada em três pavimentos, com mirante, jardim e atividades de educação ambiental.</p></article>
+      <article><h3>Museu de Arqueologia e Etnologia <span>História</span></h3><p>Primeiro museu universitário do Paraná, no prédio do antigo Colégio dos Jesuítas, fundado em 1755.</p></article>
+      <article><h3>Ilha do Mel <span>Natureza</span></h3><p>Praias, Gruta das Encantadas, Farol das Conchas, Fortaleza da Barra e o mirante do Morro das Baleias.</p></article>
+      <article><h3>Cachoeira da Quintilha <span>Banho e camping</span></h3><p>Piscina natural de águas cristalinas entre paredões de pedra, com área para acampar.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="contato" id="contato">
+  <div class="w g">
+    <div>
+      <h2>Fale com a gente</h2>
+      <p>Escreva sua mensagem e retornamos em breve.</p>
+      <form onsubmit="return enviar(event)">
+        <input type="text" id="nome" placeholder="Seu nome" aria-label="Seu nome" required>
+        <input type="email" id="mail" placeholder="Seu e-mail" aria-label="Seu e-mail" required>
+        <textarea id="msg" placeholder="Sua mensagem" aria-label="Sua mensagem" required></textarea>
+        <button class="btn" type="submit">Enviar mensagem</button>
+        <div class="ok" id="ok" role="status">Mensagem enviada. Retornamos em breve.</div>
+      </form>
+    </div>
+    <div class="info">
+      <h2>Onde estamos</h2>
+      <p>Sultan Palace Hotel, no centro de Paranaguá, ao lado da prefeitura.</p>
+      <p><a class="btn" href="https://www.google.com/maps/place/hotel+sultan/data=!4m2!3m1!1s0x94db9a43538a05b3:0xd18a31ff59d456a6" target="_blank" rel="noopener">Abrir no Google Maps</a></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="w"><span>© Sultan Palace Hotel. Todos os direitos reservados.</span><span>Paranaguá, Paraná</span></div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
